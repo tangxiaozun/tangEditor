@@ -29,6 +29,12 @@
         editor.config.onchange = function (newHtml) {
             console.log('onchange', newHtml)
         }
+        editor.config.customUploadVideo = function (resultFiles, insertVideoFn) {
+            console.log(resultFiles[0])
+            console.log(insertVideoFn)
+            insertVideoFn("http://localhost:88/api/common/file/video/view/video/艾斯.mp4")
+
+        }
         // editor.config.onblur = function (newHtml) {
         //     console.log('onblur', newHtml)
         // }

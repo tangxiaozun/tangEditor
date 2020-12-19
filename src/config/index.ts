@@ -3,12 +3,12 @@
  * @author wangfupeng
  */
 
-import menusConfig, { EmotionsType, FontSizeConfType, IndentationType } from './menus'
+import menusConfig, {EmotionsType, FontSizeConfType, IndentationType} from './menus'
 import eventsConfig from './events'
 import styleConfig from './style'
 import pasteConfig from './paste'
 import cmdConfig from './cmd'
-import imageConfig, { UploadImageHooksType } from './image'
+import imageConfig, {UploadImageHooksType} from './image'
 import textConfig from './text'
 import langConfig from './lang'
 import historyConfig from './history'
@@ -62,6 +62,12 @@ export type ConfigType = {
     customUploadImg: Function | null
     customAlert: Function
 
+
+    uploadVideoAccept: string[]
+    uploadVideoMaxSize: number
+    customUploadVideo: Function | null
+
+
     onCatalogChange: Function | null
 
     lang: string
@@ -89,8 +95,8 @@ export type ResourceLanguage = {
 export type ResourceKey =
     | string
     | {
-          [key: string]: any
-      }
+    [key: string]: any
+}
 
 // 合并所有的配置信息
 const defaultConfig = Object.assign(

@@ -1,10 +1,9 @@
 {
-  "name": "wangeditor",
-  "version": "4.5.4",
-  "description": "wangEditor - 轻量级 web 富文本编辑器，配置方便，使用简单，开源免费",
-  "homepage": "http://www.wangeditor.com/",
+  "name": "tangeditor",
+  "version": "1.1.1",
+  "description": "tangEditor",
   "keywords": [
-    "wangEditor",
+    "tangEditor",
     "富文本编辑器",
     "富文本"
   ],
@@ -32,15 +31,8 @@
     "cypress:run": "cypress run",
     "cypress:coverage": "nyc report --reporter=text-summary"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wangeditor-team/wangEditor.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wangeditor-team/wangEditor/issues"
-  },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
